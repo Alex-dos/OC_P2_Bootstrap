@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Watch it outside Boston edition </title>
   </head>
@@ -121,7 +120,7 @@
           <h5 class="text-center font-weight-light mt-2 mb-5 text-muted">
             Enjoy a unique outdoor experience, watch legendary movies, with family or friends.
             <br />
-            Attention only 1500 seats available, think about booking <a href="#book">HERE</a>
+            Attention only 1500 tickets available, think about booking <a href="#book">HERE</a>
             <br
             <h2>Refreshments, snacks, ice cream... all at your disposal.</h2>
           </h5>
@@ -155,12 +154,12 @@
 
           <hr class="featurette-divider mt-5 mb-5">
 
-          <div class="row featurette align-items-center" id="movies">
+          <div class="row featurette align-items-center">
             <div class="col-md-7">
               <h2 class="featurette-heading">Which films <span class="text-muted">are shown ?</span></h2>
-              <p class="lead">Legendary films on screen...
-                Such as Forest Gump, The Green Line, The Godfather, The Lord of the Rings: The Return of the King, The Dark Knight, Le Chevalier Noir, Your name, Pulp fiction, The Lion King, Gran Torino, Avatar...
-                </p>
+                <p class="lead">Legendary films on screen...
+                  Such as Forest Gump, The Green Line, The Godfather, The Lord of the Rings: The Return of the King, The Dark Knight, Le Chevalier Noir, Your name, Pulp fiction, The Lion King, Gran Torino, Avatar...
+                  </p>
             </div>
             <div class="col-md-5">
               <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/img2.png" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
@@ -179,29 +178,14 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputPassword4">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="youremail@movie.com">
               </div>
             </div>
-            <div class="form-group">
-              <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-              <div class="form-group">
-                <label for="inputState">Number of seats</label>
-                <select id="inputState" class="form-control">
-                  <option selected>1 Seat</option>
-                  <option>2 Seats</option>
-                  <option>3 Seats</option>
-                  <option>4 Seats</option>
-                  <option>5 Seats</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book now</button>
-
+                <div class="form-row">
+                  <label class="form-group">Number of tickets</label>
+                    <input class="form-control ml-1" type="number" value="1" id="example-number-input">
+                    <button type="submit" class="btn btn-primary mt-4" data-toggle="modal" data-target="#exampleModal">Book now</button>
+                </div>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -220,15 +204,126 @@
                 </div>
           </form>
           <!--END FORM-->
+
+          <hr class="featurette-divider mt-5">
+          
+          <h1> The films on show </h1>
+            <p>You will find below the date and time for each film.</p>
+            
+          <!--Movies-->
+
+          <div class="row mt-5">
+
+            <div class="col-md-6 col-xs-1 bg-light border">
+              <h2 class="text-center">8.05 Day</h2>
+              <div class="d-flex align-items-center mt-3">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="v-pills-first-part-tab" data-bs-toggle="pill" data-bs-target="#v-pills-first-part" type="button" role="tab" aria-controls="v-pills-first-part" aria-selected="true">First part</button>
+                  <button class="nav-link" id="v-pills-second-part-tab" data-bs-toggle="pill" data-bs-target="#v-pills-second-part" type="button" role="tab" aria-controls="v-pills-second-part" aria-selected="false">Second part</buttona>
+                  <button class="nav-link" id="v-pills-third-part-tab" data-bs-toggle="pill" data-bs-target="#v-pills-third-part" type="button" role="tab" aria-controls="v-pills-third-part" aria-selected="false">Third part</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-first-part" role="tabpanel" aria-labelledby="v-pills-first-part-tab">
+                    <p class="text-center">6PM: Toy Story</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_UX182_CR0,0,182,268_AL_.jpg" alt=""> </div>
+                  <div class="tab-pane fade" id="v-pills-second-part" role="tabpanel" aria-labelledby="v-pills-second-part-tab">
+                    <p class="text-center">8PM: Forest Gump</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY268_CR1,0,182,268_AL_.jpg" alt=""> </div>
+                  <div class="tab-pane fade" id="v-pills-third-part" role="tabpanel" aria-labelledby="v-pills-third-part-tab">
+                  <p class="text-center">10PM: The Godfather</p>
+                  <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg" alt=""> </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xs-1 bg-light border">
+              <h2 class="text-center">8.06 Day</h2>
+              <div class="d-flex align-items-center mt-3">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="v-pills-first-part2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-first-part2" type="button" role="tab" aria-controls="v-pills-first-part2" aria-selected="true">First part</button>
+                  <button class="nav-link" id="v-pills-second-part2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-second-part2" type="button" role="tab" aria-controls="v-pills-second-part2" aria-selected="false">Second part</buttona>
+                  <button class="nav-link" id="v-pills-third-part2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-third-part2" type="button" role="tab" aria-controls="v-pills-third-part2" aria-selected="false">Third part</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-first-part2" role="tabpanel" aria-labelledby="v-pills-first-part2-tab">
+                    <p class="text-center">6PM: The lion king</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt=""> 
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-second-part2" role="tabpanel" aria-labelledby="v-pills-second-part2-tab">
+                    <p class="text-center">7:45PM: Batman: The Dark Knight</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt=""> 
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-third-part2" role="tabpanel" aria-labelledby="v-pills-third-part2-tab">
+                    <p class="text-center">10:15PM: Pulp fiction</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR1,0,182,268_AL_.jpg" alt=""> 
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-xs-1 mt-5 bg-light border">
+              <h2 class="text-center">8.07 Day</h2>
+              <div class="d-flex align-items-center mt-3">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="v-pills-first-part3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-first-part3" type="button" role="tab" aria-controls="v-pills-first-part3" aria-selected="true">First part</button>
+                  <button class="nav-link" id="v-pills-second-part3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-second-part3" type="button" role="tab" aria-controls="v-pills-second-part3" aria-selected="false">Second part</buttona>
+                  <button class="nav-link" id="v-pills-third-part3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-third-part3" type="button" role="tab" aria-controls="v-pills-third-part3" aria-selected="false">Third part</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-first-part3" role="tabpanel" aria-labelledby="v-pills-first-part3-tab">
+                    <p class="text-center">6PM: Avatar</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt=""> 
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-second-part3" role="tabpanel" aria-labelledby="v-pills-second-part3-tab">
+                    <p class="text-center">10AM: The Lord of the Rings: <br> The Return of the King</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt=""> 
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-third-part3" role="tabpanel" aria-labelledby="v-pills-third-part3-tab">
+                    <p class="text-center">10:15PM: Gran torino</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BMTc5NTk2OTU1Nl5BMl5BanBnXkFtZTcwMDc3NjAwMg@@._V1_UX182_CR0,0,182,268_AL_.jpg" alt=""> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6 col-xs-1 mt-5 bg-light border">
+              <h2 class="text-center">8.08 Day</h2>
+              <div class="d-flex align-items-center mt-3">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="v-pills-first-part4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-first-part4" type="button" role="tab" aria-controls="v-pills-first-part4" aria-selected="true">First part</button>
+                  <button class="nav-link" id="v-pills-second-part4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-second-part4" type="button" role="tab" aria-controls="v-pills-second-part4" aria-selected="false">Second part</buttona>
+                  <button class="nav-link" id="v-pills-third-part4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-third-part4" type="button" role="tab" aria-controls="v-pills-third-part4" aria-selected="false">Third part</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-first-part4" role="tabpanel" aria-labelledby="v-pills-first-part4-tab">
+                    <p class="text-center">6PM: Aladin</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BMjQ2ODIyMjY4MF5BMl5BanBnXkFtZTgwNzY4ODI2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" alt=""> 
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-second-part4" role="tabpanel" aria-labelledby="v-pills-second-part4-tab">
+                    <p class="text-center">7:15PM: Star Wars:<br> Revenge of the Sith</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_UY268_CR9,0,182,268_AL_.jpg" alt=""> 
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-third-part4" role="tabpanel" aria-labelledby="v-pills-third-part4-tab">
+                    <p class="text-center">9:45PM: John Wick</p>
+                    <img class="mb-3 border" src="https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_UX182_CR0,0,182,268_AL_.jpg" alt=""> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-xs-6"></div>
+
+        </div>
         </div>
 
-        <!-- FOOTER -->
-        <footer class="container">
-          <p class="float-end"><a href="#">Back to top</a></p>
-          <p>&copy; Alexandre Dosseto &middot; <a href="https://www.office-tourisme-usa.com/etat/massachusetts/boston/" target="_blank"> City of Boston’s</a> &middot; <a href="https://www.boston.gov/parks/public-garden" target="_blank">Boston Public Garden’s</a></p>
-        </footer>
 
-        
+        <!-- FOOTER -->
+          <footer class="ml-2 mr-2">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>&copy; Alexandre Dosseto &middot; <a href="https://www.office-tourisme-usa.com/etat/massachusetts/boston/" target="_blank"> City of Boston’s</a> &middot; <a href="https://www.boston.gov/parks/public-garden" target="_blank">Boston Public Garden’s</a></p>
+          </footer>
+        </div>
       </div>
     </main>
 
